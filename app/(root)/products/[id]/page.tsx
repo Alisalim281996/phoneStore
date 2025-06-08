@@ -6,13 +6,8 @@ import AddToCart from "@/components/single-product/AddToCart";
 import BreadCrumb from "@/components/single-product/BreadCrumb";
 import ProductRaiting from "@/components/single-product/ProductRaiting";
 
-type ProductDetailsPageProps = {
-  params: {
-    id: string;
-  };
-};
 
-const ProductDetails = async ({ params }: ProductDetailsPageProps) => {
+const ProductDetails = async ({ params }: any) => {
   const product = await fetchSingleProduct(params.id);
 
   return (
