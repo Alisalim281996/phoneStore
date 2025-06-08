@@ -7,7 +7,13 @@ import { formatCurrency } from "@/utils/format";
 import Image from "next/image";
 import React from "react";
 
-const ProductDetails = async ({ params }: { params: { id: string } }) => {
+type Props = {
+  params: {
+    id: string;
+  };
+};
+
+const ProductDetails = async ({ params }:Props) => {
   const { id } =  params;
   const product = await fetchSingleProduct(id);
 
