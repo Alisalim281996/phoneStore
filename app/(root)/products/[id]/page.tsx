@@ -8,7 +8,7 @@ import Image from "next/image";
 import React from "react";
 
 const ProductDetails = async ({ params }: { params: { id: string } }) => {
-  const { id } = await params;
+  const { id } =params;
   const product = await fetchSingleProduct(id);
 
   return (
