@@ -8,7 +8,7 @@ import ProductRaiting from "@/components/single-product/ProductRaiting";
 
 type ProductDetailsPageProps = {
   params: {
-    id: string;
+    id: any;
   };
 };
 
