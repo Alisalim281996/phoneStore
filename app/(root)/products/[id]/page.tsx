@@ -1,21 +1,19 @@
+import { fetchSingleProduct } from "@/utils/action";
+import { formatCurrency } from "@/utils/format";
+import Image from "next/image";
 import FavoriteToogleButton from "@/components/products/FavoriteToogleButton";
 import AddToCart from "@/components/single-product/AddToCart";
 import BreadCrumb from "@/components/single-product/BreadCrumb";
 import ProductRaiting from "@/components/single-product/ProductRaiting";
-import { fetchSingleProduct } from "@/utils/action";
-import { formatCurrency } from "@/utils/format";
-import Image from "next/image";
-import React from "react";
 
-type Props = {
+type ProductDetailsPageProps = {
   params: {
     id: string;
   };
 };
 
-const ProductDetails = async ({ params }:Props) => {
-  const { id } =  params;
-  const product = await fetchSingleProduct(id);
+const ProductDetails = async ({ params }: ProductDetailsPageProps) => {
+  const product = await fetchSingleProduct(params.id);
 
   return (
     <section>
