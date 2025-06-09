@@ -1,7 +1,6 @@
 import ProductsContainer from "@/components/products/ProductsContainer";
 import React from "react";
 
-
 const ProductsPage = async ({ searchParams }: any) => {
   const { layout = "grid" } = (await searchParams) || {};
   const { search } = (await searchParams) || "";

@@ -6,9 +6,11 @@ import AddToCart from "@/components/single-product/AddToCart";
 import BreadCrumb from "@/components/single-product/BreadCrumb";
 import ProductRaiting from "@/components/single-product/ProductRaiting";
 
-
 const ProductDetails = async ({ params }: any) => {
-  const product = await fetchSingleProduct(params.id);
+  const { id } = await params;
+  
+
+  const product = await fetchSingleProduct(id);
 
   return (
     <section>
