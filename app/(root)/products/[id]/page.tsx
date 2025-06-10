@@ -9,7 +9,6 @@ import ProductRaiting from "@/components/single-product/ProductRaiting";
 const ProductDetails = async ({ params }: any) => {
   const { id } = await params;
   
-
   const product = await fetchSingleProduct(id);
 
   return (

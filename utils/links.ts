@@ -12,6 +12,7 @@ export const dropDownMenu: NavBarLinks[] = [
     { href: "/reviews", name: "Reviews" },
     { href: "/cart", name: "Cart" },
     { href: "/orders", name: "Orders" },
+    { href: "/admin/sales", name: "dashboard" },
 ]
 
 export const Links = {
@@ -21,3 +22,8 @@ export const Links = {
     PRODUCTS: { href: '/products', name: "Products" },
 } as const
 
+export const adminLinks: NavBarLinks[] = [
+    { href: '/admin/sales', name: "Sales" },
+    { href: '/admin/products', name: "My products" },
+    { href: '/admin/products/create', name: "Create Products" },
+]

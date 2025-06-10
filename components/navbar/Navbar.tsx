@@ -5,6 +5,7 @@ import Container from "../global/Container";
 import CartButton from "./CartButton";
 import LinksDropDown from "./LinksDropDown";
 import { DarkMode } from "./DarkMode";
+import SignOutLink from "./SignOutLink";
 
 const Navbar = () => {
   return (
@@ -18,6 +19,7 @@ const Navbar = () => {
           <CartButton />
           <DarkMode />
           <LinksDropDown />
+          
         </div>
       </Container>
     </nav>

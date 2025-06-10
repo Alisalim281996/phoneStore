@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SignOutPage = () => {
+const SalesPage = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const SignOutPage = () => {
   )
 }
 
-export default SignOutPage
+export default SalesPage

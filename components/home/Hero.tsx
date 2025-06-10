@@ -23,6 +23,7 @@ const Hero = () => {
 
       <Suspense fallback={<LoadingHeaders />}>
         <HeroCarousel />
+        
       </Suspense>
     </section>
   );
